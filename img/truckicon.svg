@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="43px" viewBox="0 0 39 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>truckicon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Page" transform="translate(-475.000000, -531.000000)" fill="#373737">
+            <g id="top-section">
+                <g id="four-boxes" transform="translate(120.000000, 511.000000)">
+                    <g id="Owner-Operator" transform="translate(251.333333, 0.000000)">
+                        <g id="truckicon" transform="translate(104.000000, 20.000000)">
+                            <path d="M28,35 L10,35 L10,42 C10,42.5522847 9.55228475,43 9,43 L5,43 C4.44771525,43 4,42.5522847 4,42 L4,35 L2,35 L2,28 C2,26.8954305 2.8954305,26 4,26 L5,26 L5,2 C5,0.8954305 5.8954305,0 7,0 C8.1045695,0 9,0.8954305 9,2 L9,3.99963381 C9.83566053,3.37194482 10.8743941,3 12,3 L25,3 C26.635599,3 28.0877712,3.7853431 29,4.99951255 L29,2 C29,0.8954305 29.8954305,0 31,0 C32.1045695,0 33,0.8954305 33,2 L33,26 L34,26 C35.1045695,26 36,26.8954305 36,28 L36,35 L34,35 L34,42 C34,42.5522847 33.5522847,43 33,43 L29,43 C28.4477153,43 28,42.5522847 28,42 L28,35 Z" id="Combined-Shape"></path>
+                            <rect id="Rectangle-9" x="0" y="35" width="38" height="5" rx="2"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

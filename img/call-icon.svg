@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>call-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Page" transform="translate(-803.000000, -30.000000)" fill-rule="nonzero" fill="#000000">
+            <g id="top-section">
+                <g id="Header">
+                    <g id="call-button" transform="translate(773.000000, 20.000000)">
+                        <path d="M34.8333333,20.3933333 C36.7533333,24.1666667 39.84,27.2533333 43.62,29.1733333 L46.5533333,26.2333333 C46.92,25.8666667 47.4466667,25.76 47.9066667,25.9066667 C49.4,26.4 51.0066667,26.6666667 52.6666667,26.6666667 C53.4066667,26.6666667 54,27.26 54,28 L54,32.6666667 C54,33.4066667 53.4066667,34 52.6666667,34 C40.1466667,34 30,23.8533333 30,11.3333333 C30,10.5933333 30.6,10 31.3333333,10 L36,10 C36.74,10 37.3333333,10.5933333 37.3333333,11.3333333 C37.3333333,12.9933333 37.6,14.6 38.0933333,16.0933333 C38.24,16.5533333 38.1333333,17.08 37.7666667,17.4466667 L34.8333333,20.3933333 Z" id="call-icon"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
