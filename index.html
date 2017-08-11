@@ -34,8 +34,8 @@
                     </div>
                     <div class="col-md-4 col-md-offset-6">
                         <div class="call-apply-btns"> 
-                            <a class="button" href="#"><img src="/img/call-icon.svg"> (888) 555-1212</a> 
-                            <a class="button" href="#">Apply Now</a> 
+                            <a class="button" href="tel:@Model.Phone"><img src="/img/call-icon.svg"> @Model.Phone</a> 
+                            <a class="button" href="@Url.Action("ApplyDriverApp", new { utm_source = Model.Code })">Apply Now</a>  
                         </div>
                      </div>
                 </div>
@@ -46,8 +46,8 @@
             <div class="wrapper">
                 <div class="row">
                     <div class="col-md-12 center"> 
-                        <h1 class="light">Driving Freight is what drives us.</h1>
-                        <h2 class="light">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. </h2>
+                        <h1 class="light">@Model.Headline</h1>
+                        <h2 class="light">@Model.Subhead</h2>
                     </div>
                 </div>
             </div>       
@@ -134,21 +134,18 @@
                     <div class="row">
                         <div class="col-md-5 col-md-offset-1"> 
                             <ul>
-                            <li>GREAT PAY</li>
-                            <li>HOME EVERY WEEK</li>
-                            <li>NEWEST TRUCKS: Avg. 1 ½ years old</li>
-                            <li>401k</li>
-                            <li>PAID TRAINING</li>
-                            <li>TUITION REIMBURSEMENT</li>
+                             @foreach(var benefit in Model.Benefits.Where((b, i) => i % 2 == 0))
+                                {
+                                    <li>@benefit</li>
+                                }
                             </ul>
                         </div>
                         <div class="col-md-5 col-md-offset-1"> 
                             <ul>
-                            <li>LOTS OF MILES</li>
-                            <li>PAID VACATION</li>
-                            <li>EXCELLENT BENEFITS: Health, dental, and vision starting as soon as 30 days.</li>
-                            <li>PAID VACATION</li>
-                            <li>Also hiring recent CDL a grads - earn top pay in 90 days.</li>
+                             @foreach(var benefit in Model.Benefits.Where((b, i) => i % 2 == 0))
+                                {
+                                    <li>@benefit</li>
+                                }
                             </ul>
                         </div>   
                      </div>
@@ -166,8 +163,8 @@
                         <div class="col-md-12 center"> 
                             <h2 class="light">Call a recruiting specialist, who will help find the perfect job & route for you! </h2>
                             <div class="call-apply-btns"> 
-                                <a class="button" href="#"><img src="/img/call-icon.svg"> (888) 555-1212</a> 
-                                <a class="button" href="#">Apply Now</a> 
+                                <a class="button" href="tel:@Model.Phone"><img src="/img/call-icon.svg"> @Model.Phone</a> 
+                                <a class="button" href="@Url.Action("ApplyDriverApp", new { utm_source = Model.Code })">Apply Now</a>  
                             </div>
                         </div>
                     </div>
@@ -215,9 +212,10 @@
                            <div class="aside inner">
                                 <h3 class="center">Qualifications</h3>
                                 <ul>
-                                    <li>Don't Wait - you can be Pre-Qualified in less than 2 minutes!</li>
-                                    <li>Must be 21 years of age or older with CDL A and 3 months of current OTR experience</li>
-                                    <li>Also accepting CDL A Recent Grads/Students 21 years and older</li>
+                                     @foreach(var qualification in Model.Qualifications)
+                                        {
+                                            <li>@qualification</li>
+                                        }
                                 </ul>
                             </div>
                         </div>
@@ -239,8 +237,8 @@
                         <div class="col-md-7"> 
                             <h2>Are you excited about a new career at Western Express?</h2>
                             <div class="call-apply-btns right"> 
-                                <a class="button" href="#"><img src="/img/call-icon.svg"> (888) 555-1212</a> 
-                                <a class="button" href="#">Apply Now</a> 
+                                <a class="button" href="tel:@Model.Phone"><img src="/img/call-icon.svg"> @Model.Phone</a> 
+                                <a class="button" href="@Url.Action("ApplyDriverApp", new { utm_source = Model.Code })">Apply Now</a>  
                             </div>   
                         </div>
                     </div>
