@@ -90,7 +90,7 @@ body {
         line-height: 1.3em;
         font-weight: 600;
         border-radius: 2px;
-        margin:0 10px;
+        margin:5px;
         color: $dark;
     }
     .button.light {
@@ -168,7 +168,7 @@ body {
     padding: 12px 30px;
     margin: auto;
     margin: 10px;
-    min-width: 150px;
+    min-width: 190px;
     letter-spacing: .2px;
     transition:.02s ease;
     &:hover {
@@ -190,7 +190,9 @@ a.simple-inline {
     border-bottom: 1px solid $primary-color;
     color: $grey;
 }
-
+.call-apply-btns {
+    text-align: center;
+}
 
 /*LAYOUT*/
 body {
@@ -231,6 +233,7 @@ body {
 }
 
 .logo {
+    text-align: center;
     margin: 10px auto;
     img {
         max-width:200px;
@@ -261,11 +264,14 @@ header {
 /*DRIVER TYPE BOXES*/
 
 .driver-type-box {
-    margin:40px;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.5);
     position: relative;
     min-height:311px;
     background:$light;
+    margin-bottom:160px;
+    &:first-child {
+        margin-top:-80px;
+    }
     .driver-type-inner {
         position: absolute;
         width:100%;
@@ -399,14 +405,13 @@ a.simple:after {
     .row {
         padding:60px 0;
     }
-    img {
-        max-width:420px;
+    .truck-image img{
+        max-width:300px;
+            margin: auto;
+            display: block;
     }
     .inner-wrapper {
         border-top:1px solid $primary-color;
-    }
-    .call-apply-btns {
-        text-align: right;
     }
 }
 /*FOOTER*/
@@ -455,11 +460,17 @@ footer {
     
 }
 @media(min-width:980px) {
+    header .call-apply-btns {
+            text-align: right;
+        }
      .hero {
         min-height:622px;
         h1 {
             margin:110px auto 40px auto;
         }
+    }
+    .logo {
+        text-align: left;
     }
     .driver-types {
         top:-150px;
@@ -468,12 +479,34 @@ footer {
         position: relative;
         max-height:50px;
     }
-    .driver-type-box {
-        margin:0;
+    .driver-type-box,
+    .driver-type-box:first-child {
+        margin-top:0;
+    }
+    .final-cta .call-apply-btns {
+        text-align: right;
+    }
+    .benefits h2 {
+        margin-top: -160px;
+    }
+    .final-cta .truck-image img {
+        min-width:420px;
     }
 }
 @media(min-width:1440px){
     .wrapper {
         padding:0 120px; 
     }
+}
+@media (max-width: 980px){
+    .final-cta h2 {
+            text-align: center;
+            margin: 30px 10px;
+    }
+    .inner-wrapper {
+        padding: 0 20px;
+    }
+   /* .row.driver-types .inner-wrap {
+        max-width:400px;
+    }*/
 }

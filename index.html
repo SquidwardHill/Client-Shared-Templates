@@ -32,7 +32,7 @@
                     <div class="col-md-2">
                         <div class="logo"> <img src="/img/west-white-logo.png"> </div>
                     </div>
-                    <div class="col-md-4 col-md-offset-6">
+                    <div class="col-md-10">
                         <div class="call-apply-btns"> 
                             <a class="button" href="tel:@Model.Phone"><img src="/img/call-icon.svg"> @Model.Phone</a> 
                             <a class="button" href="@Url.Action("ApplyDriverApp", new { utm_source = Model.Code })">Apply Now</a>  
@@ -232,7 +232,9 @@
                 <!--wrappers-->
                     <div class="row">
                         <div class="col-md-5"> 
-                            <img src="/img/guy-truck.png">
+                            <div class="truck-image">
+                                <img src="/img/guy-truck.png">
+                            </div>
                         </div>
                         <div class="col-md-7"> 
                             <h2>Are you excited about a new career at Western Express?</h2>

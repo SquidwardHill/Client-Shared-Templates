@@ -376,7 +376,7 @@ body .button {
   line-height: 1.3em;
   font-weight: 600;
   border-radius: 2px;
-  margin: 0 10px;
+  margin: 5px;
   color: #000; }
 body .button.light {
   background: #fff; }
@@ -435,7 +435,7 @@ body li {
   padding: 12px 30px;
   margin: auto;
   margin: 10px;
-  min-width: 150px;
+  min-width: 190px;
   letter-spacing: .2px;
   transition: .02s ease; }
   .button:hover {
@@ -454,6 +454,9 @@ a.simple:hover {
 a.simple-inline {
   border-bottom: 1px solid #99cc00;
   color: #666; }
+
+.call-apply-btns {
+  text-align: center; }
 
 /*LAYOUT*/
 body .container-fluid {
@@ -493,6 +496,7 @@ body .row {
   align-items: center; }
 
 .logo {
+  text-align: center;
   margin: 10px auto; }
   .logo img {
     max-width: 200px; }
@@ -516,11 +520,13 @@ header {
 
 /*DRIVER TYPE BOXES*/
 .driver-type-box {
-  margin: 40px;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.5);
   position: relative;
   min-height: 311px;
-  background: #fff; }
+  background: #fff;
+  margin-bottom: 160px; }
+  .driver-type-box:first-child {
+    margin-top: -80px; }
   .driver-type-box .driver-type-inner {
     position: absolute;
     width: 100%;
@@ -634,12 +640,12 @@ a.simple:after {
 /*FINAL CTA*/
 .final-cta .row {
   padding: 60px 0; }
-.final-cta img {
-  max-width: 420px; }
+.final-cta .truck-image img {
+  max-width: 300px;
+  margin: auto;
+  display: block; }
 .final-cta .inner-wrapper {
   border-top: 1px solid #99cc00; }
-.final-cta .call-apply-btns {
-  text-align: right; }
 
 /*FOOTER*/
 footer {
@@ -675,10 +681,16 @@ footer {
   .hide-br {
     display: block; } }
 @media (min-width: 980px) {
+  header .call-apply-btns {
+    text-align: right; }
+
   .hero {
     min-height: 622px; }
     .hero h1 {
       margin: 110px auto 40px auto; }
+
+  .logo {
+    text-align: left; }
 
   .driver-types {
     top: -150px;
@@ -687,10 +699,31 @@ footer {
     position: relative;
     max-height: 50px; }
 
-  .driver-type-box {
-    margin: 0; } }
+  .driver-type-box,
+  .driver-type-box:first-child {
+    margin-top: 0; }
+
+  .final-cta .call-apply-btns {
+    text-align: right; }
+
+  .benefits h2 {
+    margin-top: -160px; }
+
+  .final-cta .truck-image img {
+    min-width: 420px; } }
 @media (min-width: 1440px) {
   .wrapper {
     padding: 0 120px; } }
+@media (max-width: 980px) {
+  .final-cta h2 {
+    text-align: center;
+    margin: 30px 10px; }
+
+  .inner-wrapper {
+    padding: 0 20px; }
+
+  /* .row.driver-types .inner-wrap {
+       max-width:400px;
+   }*/ }
 
 /*# sourceMappingURL=main.css.map */
