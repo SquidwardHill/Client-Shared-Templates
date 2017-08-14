@@ -47,7 +47,7 @@
             <div class="wrapper">
                 <div class="row">
                     <div class="col-md-12 center"> 
-                         <h1 class="light">@Model.Headline</h1>
+                         <h1 class="light">Drive like a boss.</h1>
                             <h2 class="light">@Model.Subhead</h2>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                     <div class="driver-type-box">
                         <div class="oval"><amp-img src="@Url.Content("~/Content/Images/van-icon.svg")" alt="van icon" height="50" width="52"></amp-img></div>
                         <div class="driver-type-inner">
-                            <h3 class="center underline">Flatbed Drivers</h3>
+                            <h3 class="center underline">Lease Drivers</h3>
                             <ul>
                                 <li>Earn up to $75,000</li>
                                 <li>Weekly Home Time</li>
@@ -156,29 +156,31 @@
                     <div class="row">
                         <div class="col-md-12 center"> 
                             <h2 class="underline">GREAT REGIONAL-Top Pay  PLUS, Home Weekly! CDL A Truck Driver.<br class="hide-br"> 
-                                Regional Truck Drivers Wanted at Western Express.</h2>
+                                Regional Truck Drivers Wanted at Dart.</h2>
 
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6"> 
+                        <div class="col-md-8"> 
                             <div class="anchors" id="one">
-                                <h3 class="underline">Students</h3>
-                                <p>We make sure that you'll get home EVERY WEEK with this regional route. Plus, you'll earn great pay—average $1,000 or more per week with paid vacations. And, we add new trucks to our fleet every year to make sure that you'll be driving some of the most advanced equipment.   <a class="simple-inline"  href="@Url.Action("ApplyDriverApp", new { utm_source = Model.Code })">Apply Now</a> </p>
+                                <h3 class="underline">Lease Drivers</h3>
+                                 <p>Earn even more as a Driver Trainer! up to $75,000/yr or more! If you have 3 months or more experience as a CDL A truck driver, you can qualify as a driver trainer at Dart. We will give you the support you need so you can help new  truck drivers get started.    <a class="simple-inline"  href="@Url.Action("ApplyDriverApp", new { utm_source = Model.Code })">Apply Now</a> </p>
+                               
                             </div>
 
                             <div class="anchors" id="two">
-                                <h3 class="underline">Lease Purchase</h3>
-                                <p>Earn even more as a Driver Trainer! up to $75,000/yr or more! If you have 3 months or more experience as a CDL A truck driver, you can qualify as a driver trainer at Western Express. We will give you the support you need so you can help new  truck drivers get started.    <a class="simple-inline"  href="@Url.Action("ApplyDriverApp", new { utm_source = Model.Code })">Apply Now</a> </p>
+                                <h3 class="underline">Students</h3>
+                                <p>We make sure that you'll get home EVERY WEEK with this regional route. Plus, you'll earn great pay—average $1,000 or more per week with paid vacations. And, we add new trucks to our fleet every year to make sure that you'll be driving some of the most advanced equipment.   <a class="simple-inline"  href="@Url.Action("ApplyDriverApp", new { utm_source = Model.Code })">Apply Now</a> </p>
                             </div>
                         </div>
-                       <div class="col-md-5 col-md-offset-1"> 
+                       <div class="col-md-3 col-md-offset-1"> 
                            <div class="aside inner">
                                 <h3 class="center">Qualifications</h3>
                                 <ul>
-                                    <li>Don't Wait - you can be Pre-Qualified in less than 2 minutes!</li>
-                                    <li>Must be 21 years of age or older with CDL A and 3 months of current OTR experience</li>
-                                    <li>Also accepting CDL A Recent Grads/Students 21 years and older</li>
+                                     @foreach(var qualification in Model.Qualifications)
+                                        {
+                                            <li>@qualification</li>
+                                        }
                                 </ul>
                             </div>
                         </div>
@@ -196,11 +198,12 @@
                     <div class="row">
                         <div class="col-md-5"> 
                             <div class="truck-image">
-                                <img src="@Url.Content($"~/Content/Site/{Model.Domain}/Images/dart-pet.jpg">
+                                <img src="/img/dart-pet.jpg">
+                                <!--<img src="@Url.Content($"~/Content/Site/{Model.Domain}/Images/dart-pet.jpg">--> 
                             </div>
                         </div>
                         <div class="col-md-7"> 
-                            <h2>Are you excited about a new career at Western Express?</h2>
+                            <h2>Are you excited about a new career at Dart?</h2>
                             <div class="call-apply-btns right"> 
                                  <a class="button" href="tel:@Model.Phone"><img src="@Url.Content("~/Content/Images/call-icon.svg")" alt="call icon">>@Model.Phone</a> 
                         <a class="button" href="@Url.Action("ApplyDriverApp", new { utm_source = Model.Code })">Apply Now</a> 
@@ -223,7 +226,7 @@
                         </div>
                         <div class="col-md-4"> 
                             <div class="pipes">
-                                <a href="#">About Us</a> | <a href="#">Privacy Policy</a> | <a href="#">drivewithwestern.com</a>
+                                <a href="#">About Us</a> | <a href="#">Privacy Policy</a> | <a href="https://www.darttruckingjobs.com/">darttruckingjobs.com/</a>
                             </div>
                         </div>
                     </div>

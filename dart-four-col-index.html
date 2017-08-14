@@ -64,7 +64,7 @@
                             <div class="driver-type-box">
                                 <div class="oval"><img src="/img/van-icon.svg"></div>
                                 <div class="driver-type-inner">
-                                   <h3 class="center underline">Flatbed Drivers</h3>
+                                   <h3 class="center underline">Lease Drivers</h3>
                                     <ul>
                                        <li>Earn up to $75,000</li>
                                         <li>Weekly Home Time</li>
@@ -182,7 +182,7 @@
                     <div class="row">
                         <div class="col-md-12 center"> 
                             <h2 class="underline">GREAT REGIONAL-Top Pay  PLUS, Home Weekly! CDL A Truck Driver.<br class="hide-br"> 
-                                Regional Truck Drivers Wanted at Western Express.</h2>
+                                Regional Truck Drivers Wanted at Dart.</h2>
 
                         </div>
                     </div>
@@ -195,12 +195,12 @@
 
                             <div class="anchors" id="two">
                                 <h3 class="underline">Lease Purchase</h3>
-                                <p>Earn even more as a Driver Trainer! up to $75,000/yr or more! If you have 3 months or more experience as a CDL A truck driver, you can qualify as a driver trainer at Western Express. We will give you the support you need so you can help new  truck drivers get started.    <a class="simple-inline"  href="@Url.Action("ApplyDriverApp", new { utm_source = Model.Code })">Apply Now</a> </p>
+                                <p>Earn even more as a Driver Trainer! up to $75,000/yr or more! If you have 3 months or more experience as a CDL A truck driver, you can qualify as a driver trainer at Dart. We will give you the support you need so you can help new  truck drivers get started.    <a class="simple-inline"  href="@Url.Action("ApplyDriverApp", new { utm_source = Model.Code })">Apply Now</a> </p>
                             </div>
 
                              <div class="anchors" id="three">
                                 <h3 class="underline">Owner Operator</h3>
-                                <p>Been out of driving for 3 years or more? We can get you back to earning now. Check out our Paid Refresher Program! Also, if you're a CDL A driver who hasn't driven in over 3 years, now's the time to restart your career with the new Refresher Program at Western Express. It's fast and easy... and you get paid to get back up to speed!  So see for yourself, the many benefits and advantages of driving for Western Express. Welcome to the land of opportunity!  <a class="simple-inline"  href="@Url.Action("ApplyDriverApp", new { utm_source = Model.Code })">Apply Now</a></p>
+                                <p>Been out of driving for 3 years or more? We can get you back to earning now. Check out our Paid Refresher Program! Also, if you're a CDL A driver who hasn't driven in over 3 years, now's the time to restart your career with the new Refresher Program at Dart. It's fast and easy... and you get paid to get back up to speed!  So see for yourself, the many benefits and advantages of driving for Dart. Welcome to the land of opportunity!  <a class="simple-inline"  href="@Url.Action("ApplyDriverApp", new { utm_source = Model.Code })">Apply Now</a></p>
                             </div>
 
                              <div class="anchors" id="four">
@@ -212,10 +212,11 @@
                        <div class="col-md-3 col-md-offset-1"> 
                            <div class="aside inner">
                                 <h3 class="center">Qualifications</h3>
-                                <ul>
-                                    <li>Don't Wait - you can be Pre-Qualified in less than 2 minutes!</li>
-                                    <li>Must be 21 years of age or older with CDL A and 3 months of current OTR experience</li>
-                                    <li>Also accepting CDL A Recent Grads/Students 21 years and older</li>
+                              <ul>
+                                     @foreach(var qualification in Model.Qualifications)
+                                        {
+                                            <li>@qualification</li>
+                                        }
                                 </ul>
                             </div>
                         </div>
@@ -237,7 +238,7 @@
                             </div>
                         </div>
                         <div class="col-md-7"> 
-                            <h2>Are you excited about a new career at Western Express?</h2>
+                            <h2>Are you excited about a new career at Dart?</h2>
                             <div class="call-apply-btns right"> 
                                  <a class="button" href="tel:@Model.Phone"><img src="@Url.Content("~/Content/Images/call-icon.svg")" alt="call icon">>@Model.Phone</a> 
                         <a class="button" href="@Url.Action("ApplyDriverApp", new { utm_source = Model.Code })">Apply Now</a> 
@@ -260,7 +261,7 @@
                         </div>
                         <div class="col-md-4"> 
                             <div class="pipes">
-                                <a href="#">About Us</a> | <a href="#">Privacy Policy</a> | <a href="#">drivewithwestern.com</a>
+                                <a href="#">About Us</a> | <a href="#">Privacy Policy</a> | <a href="https://www.darttruckingjobs.com/">darttruckingjobs.com/</a>
                             </div>
                         </div>
                     </div>
