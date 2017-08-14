@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Page" transform="translate(-220.000000, -1114.000000)" fill-rule="nonzero" fill="#285281">
+            <g id="middle-section" transform="translate(-100.000000, 703.000000)">
+                <g id="text-area" transform="translate(100.000000, 242.000000)">
+                    <g id="benefits-left" transform="translate(220.000000, 160.000000)">
+                        <polygon id="check" points="7 25 0 18 3 15 7 19 17 9 20 12"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,57 @@
+/*FONT MIXINS*/
+
+@font-face {
+    font-family: 'Wicked Grit';
+    src: url('/fonts/wickedgrit-webfont.woff2') format('woff2'),
+         url('/fonts/wickedgrit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*VARIABLES*/
+$headline-font-stack: 'Wicked Grit',sans-serif;
+$alt-headline: 'Roboto', sans-serif;
+$para-font: "Roboto",sans-serif;
+$primary-color: #285281;
+$accent-color: #ed2544;
+$light: #fff;
+$grey: #666;
+$dark-grey: #2D2D2D;
+$dark:#000;
+
+
+
+
+/*HEADER*/
+header {
+    background: $primary-color;
+    border-bottom: 2px solid $primary-color;
+    .row {
+    padding:20px 0;
+    }
+}
+/*HERO*/
+.hero {
+    background-image:url(/img/dart-driver-wheel.jpg);
+}
+
+/*MID CTA*/
+.mid-cta {
+    background-image:url(/img/sunset-truck.jpg);
+}
+
+
+/*QUALIFICATIONS*/
+.qualifications {
+    ul {
+        list-style-image: url('/img/blue-check.svg');
+        margin-left: -20px;
+    }
+}
+
+/*FINAL CTA*/
+.final-cta{
+    .row {
+        padding:60px 0 0 0;
+    }
+}
