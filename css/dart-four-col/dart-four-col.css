@@ -12,11 +12,18 @@ body p, body li {
   font-family: "Roboto", sans-serif; }
 body .button {
   font-size: 19px;
-  background: #285281; }
+  background: #285281;
+  color: #fff; }
   body .button:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #285281; }
+body .button.light {
+  color: #285281; }
+  body .button.light:hover {
+    background: #ededed; }
 body h2.underline:after,
-body h3.underline:after {
+body h3.underline:after,
+body .benefits h2:after {
   content: "";
   height: 2px;
   width: 60px;
@@ -31,6 +38,9 @@ body a.simple:after {
   display: block;
   margin: 0 auto;
   text-align: center; }
+
+a.simple-inline {
+  border-bottom: 1px solid #285281; }
 
 /*HEADER*/
 header {
@@ -59,6 +69,14 @@ header {
 /*FINAL CTA*/
 .final-cta .row {
   padding: 60px 0 0 0; }
+.final-cta .inner-wrapper {
+  border-top: 1px solid #285281; }
+
+/*FOOTER*/
+footer {
+  background: #2D2D2D; }
+  footer a {
+    color: #285281; }
 
 /*MEDIA QUERIES*/
 @media (min-width: 767px) {
@@ -68,4 +86,4 @@ header {
   body h1 {
     font-size: 50px; } }
 
-/*# sourceMappingURL=dart.css.map */
+/*# sourceMappingURL=dart-two-col.css.map */

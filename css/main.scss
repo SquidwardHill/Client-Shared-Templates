@@ -417,6 +417,7 @@ a.simple:after {
 /*FOOTER*/
 footer {
     background:$dark-grey;
+    font-family:$para-font;
     .row {
         padding:32px 0;
     }
@@ -428,8 +429,10 @@ footer {
         font-size: 13px;	
         line-height: 18px;
         text-decoration:none;
+        font-family:$para-font;
     }
     p {
+        font-family:$para-font;
         font-size: 16px;
         color:$light;
         font-weight:300;

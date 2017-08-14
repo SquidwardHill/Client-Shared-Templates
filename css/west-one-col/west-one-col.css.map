@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,iBAAiB;AACjB,yBAAyB;EACrB,mCAAoC;IAC5B,QAAQ,EAAE,QAAQ;IAClB,KAAK,EAAE,GAAG;IACV,GAAG,EAAE,IAAI;IACT,OAAO,EAAE,MAAM;IACf,IAAI,EAAE,GAAG",
+"sources": ["west-one-col.scss"],
+"names": [],
+"file": "west-one-col.css"
+}

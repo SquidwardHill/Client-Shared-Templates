@@ -649,7 +649,8 @@ a.simple:after {
 
 /*FOOTER*/
 footer {
-  background: #2D2D2D; }
+  background: #2D2D2D;
+  font-family: "Fira Sans", sans-serif; }
   footer .row {
     padding: 32px 0; }
   footer .pipes {
@@ -658,8 +659,10 @@ footer {
     color: #99cc00;
     font-size: 13px;
     line-height: 18px;
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: "Fira Sans", sans-serif; }
   footer p {
+    font-family: "Fira Sans", sans-serif;
     font-size: 16px;
     color: #fff;
     font-weight: 300; }

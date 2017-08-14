@@ -15,6 +15,7 @@ $para-font: "Roboto",sans-serif;
 $primary-color: #285281;
 $accent-color: #ed2544;
 $light: #fff;
+$light-grey: #ededed;
 $grey: #666;
 $dark-grey: #2D2D2D;
 $dark:#000;
@@ -30,12 +31,21 @@ body {
     .button {
         font-size: 19px;
         background: $primary-color;
+        color:$light;
         &:hover {
             text-decoration: none;
+            color:$primary-color;
+        }
+    }
+    .button.light {
+        color: $primary-color;
+        &:hover {
+            background:$light-grey;
         }
     }
     h2.underline:after,
-    h3.underline:after {
+    h3.underline:after,
+    .benefits h2:after {
             content: "";
             height: 2px;
             width: 60px;
@@ -52,6 +62,9 @@ body {
             margin: 0 auto;
             text-align: center;
     }  
+}
+a.simple-inline {
+    border-bottom: 1px solid $primary-color;
 }
 
 /*HEADER*/
@@ -91,7 +104,20 @@ header {
     .row {
         padding:60px 0 0 0;
     }
+    .inner-wrapper {
+            border-top: 1px solid $primary-color;;
+    }
 }
+
+/*FOOTER*/
+footer {
+        background:$dark-grey;
+    a {
+        color: $primary-color;
+    }
+}
+
+
 
 /*MEDIA QUERIES*/
 @media (min-width: 767px){
@@ -104,4 +130,11 @@ header {
             font-size: 50px;
         }
     }
+    .driver-type-box .driver-type-inner {
+            position: absolute;
+            width: 50%;
+            top: 65px;
+            padding: 0 15px;
+            left: 25%;
+        }
 }
