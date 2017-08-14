@@ -5,6 +5,33 @@
   font-weight: normal;
   font-style: normal; }
 /*VARIABLES*/
+/*GLOBAL- BUTTONS, LINKS, FONTS*/
+body h1, body h2, body h3, body .button {
+  font-family: "Wicked Grit", sans-serif; }
+body p, body li {
+  font-family: "Roboto", sans-serif; }
+body .button {
+  font-size: 19px;
+  background: #285281; }
+  body .button:hover {
+    text-decoration: none; }
+body h2.underline:after,
+body h3.underline:after {
+  content: "";
+  height: 2px;
+  width: 60px;
+  background: #285281;
+  display: block;
+  margin: 10px auto 0 auto; }
+body a.simple:after {
+  content: "";
+  height: 1px;
+  width: 80px;
+  background: #285281;
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
+
 /*HEADER*/
 header {
   background: #285281;
@@ -20,6 +47,10 @@ header {
 .mid-cta {
   background-image: url(/img/sunset-truck.jpg); }
 
+/*BENEFITS*/
+.benefits ul {
+  list-style-image: url(/img/blue-check.svg); }
+
 /*QUALIFICATIONS*/
 .qualifications ul {
   list-style-image: url("/img/blue-check.svg");
@@ -28,5 +59,13 @@ header {
 /*FINAL CTA*/
 .final-cta .row {
   padding: 60px 0 0 0; }
+
+/*MEDIA QUERIES*/
+@media (min-width: 767px) {
+  body h2 {
+    font-size: 28px;
+    line-height: 54px; }
+  body h1 {
+    font-size: 50px; } }
 
 /*# sourceMappingURL=dart.css.map */
