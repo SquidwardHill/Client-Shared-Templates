@@ -1,0 +1,162 @@
+
+/*VARIABLES*/
+
+$headline-font-stack: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+$alt-headline: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+$para-font: "Roboto",sans-serif;
+$primary-color: #961326;
+$accent-color: #961326;
+$light: #fff;
+$light-grey: #ededed;
+$grey: #666;
+$dark-grey: #2D2D2D;
+$dark:#000;
+
+/*GLOBAL- BUTTONS, LINKS, FONTS*/
+
+body {
+    h1,
+    h2,
+    h3,
+    .button {
+        font-family: $headline-font-stack;
+    }
+    p,
+    li {
+        font-family: $para-font;
+    }
+    .button {
+        font-size: 19px;
+        background: $primary-color;
+        color: $light;
+        &:hover {
+            text-decoration: none;
+            color: $primary-color;
+        }
+    }
+    .button.light {
+        color: $primary-color;
+        &:hover {
+            background: $light-grey;
+        }
+    }
+    h2.underline:after,
+    h3.underline:after,
+    .benefits h2:after {
+        content: "";
+        height: 2px;
+        width: 60px;
+        background: $primary-color;
+        display: block;
+        margin: 10px auto 0 auto;
+    }
+    a.simple:after {
+        content: "";
+        height: 1px;
+        width: 80px;
+        background: $primary-color;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+a.simple-inline {
+    border-bottom: 1px solid $primary-color;
+}
+
+
+/*HEADER*/
+
+header {
+    background: $primary-color;
+    border-bottom: 2px solid $primary-color;
+    .row {
+        padding: 20px 0;
+    }
+}
+
+
+/*HERO*/
+
+.hero {
+    background-image: url(/img/usx-dedicated-truck.jpg);
+}
+.driver-type-box {
+    max-width: 768px;
+    margin: auto auto 160px auto;
+}
+
+/*MID CTA*/
+
+.mid-cta {
+    background-image: url(/img/usx-dashboard-hero.jpg);
+    background-position: 50% 30%;
+}
+
+
+/*BENEFITS*/
+
+.benefits ul {
+    list-style-image: url(/img/blue-check.svg);
+}
+
+
+/*QUALIFICATIONS*/
+
+.qualifications {
+    ul {
+        list-style-image: url('/img/blue-check.svg');
+        margin-left: -20px;
+    }
+}
+
+
+/*FINAL CTA*/
+
+.final-cta {
+    .row {
+        padding: 60px 0 0 0;
+    }
+    .inner-wrapper {
+        border-top: 1px solid $primary-color;
+        ;
+    }
+}
+
+
+/*FOOTER*/
+
+footer {
+    background: $dark-grey;
+    a {
+        color: $primary-color;
+    }
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 767px) {
+    body {
+        h2 {
+            font-size: 28px;
+            line-height: 54px;
+        }
+        h1 {
+            font-size: 50px;
+        }
+    }
+    @media(min-width:980px) {
+        .final-cta h2 {
+            text-align: right;
+        }
+        .driver-type-box .driver-type-inner {
+            position: absolute;
+            width: 50%;
+            top: 65px;
+            padding: 0 15px;
+            left: 25%;
+        }
+    }
+}

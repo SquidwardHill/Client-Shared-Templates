@@ -1,0 +1,89 @@
+/*FONT MIXINS*/
+@font-face {
+  font-family: 'Wicked Grit';
+  src: url("/fonts/wickedgrit-webfont.woff2") format("woff2"), url("/fonts/wickedgrit-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/*VARIABLES*/
+/*GLOBAL- BUTTONS, LINKS, FONTS*/
+body h1, body h2, body h3, body .button {
+  font-family: "Raleway", sans-serif; }
+body p, body li {
+  font-family: "Roboto", sans-serif; }
+body .button {
+  font-size: 19px;
+  background: #336699;
+  color: #fff; }
+  body .button:hover {
+    text-decoration: none;
+    color: #336699; }
+body .button.light {
+  color: #336699; }
+  body .button.light:hover {
+    background: #ededed; }
+body h2.underline:after,
+body h3.underline:after,
+body .benefits h2:after {
+  content: "";
+  height: 2px;
+  width: 60px;
+  background: #336699;
+  display: block;
+  margin: 10px auto 0 auto; }
+body a.simple:after {
+  content: "";
+  height: 1px;
+  width: 80px;
+  background: #336699;
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
+
+a.simple-inline {
+  border-bottom: 1px solid #336699; }
+
+/*HEADER*/
+header {
+  background: #0e212f;
+  border-bottom: 2px solid #0e212f; }
+  header .row {
+    padding: 20px 0; }
+
+/*HERO*/
+.hero {
+  background-image: url(/img/ptl-hero.jpg); }
+
+/*MID CTA*/
+.mid-cta {
+  background-image: url(/img/ptl-fam-short.jpg); }
+
+/*BENEFITS*/
+.benefits ul {
+  list-style-image: url(/img/blue-check.svg); }
+
+/*QUALIFICATIONS*/
+.qualifications ul {
+  list-style-image: url("/img/blue-check.svg");
+  margin-left: -20px; }
+
+/*FINAL CTA*/
+.final-cta .row {
+  padding: 60px 0 0 0; }
+.final-cta .inner-wrapper {
+  border-top: 1px solid #336699; }
+
+/*FOOTER*/
+footer {
+  background: #9b9b9b; }
+  footer a {
+    color: #336699; }
+
+/*MEDIA QUERIES*/
+@media (min-width: 767px) {
+  body h2 {
+    font-size: 28px;
+    line-height: 54px; }
+  body h1 {
+    font-size: 50px; } }
+
+/*# sourceMappingURL=ptl-four-col.css.map */
